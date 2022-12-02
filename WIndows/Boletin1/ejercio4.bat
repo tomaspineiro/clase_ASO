@@ -16,7 +16,7 @@ rem Crea un ficheiro por lotes que mediante un menú e utilizando funcións perm
 
 ::############################################################################
 
-:MENU
+:MENU1
 
 echo -----------MENU--------------
 
@@ -28,22 +28,24 @@ echo e. Engadir o directorio actual ao ficheiro VARIOS.TXT
 echo f. Salir
 echo ---------------------------------
 
-set /p opcion=Que opcion eliges 
+set /p opcion=Que opcion eliges? 
 
 ::############################################################################
 
-if %opcion% == "a" goto opA
-if %opcion% == "b" goto opB
-if %opcion% == "c" goto opC
-if %opcion% == "d" goto opD
-if %opcion% == "e" goto opE
-if %opcion% == "f" goto end
+if %opcion% == a  goto opA 
+if %opcion% == b  goto opB 
+if %opcion% == c  goto opC 
+if %opcion% == d  goto opD 
+if %opcion% == e  goto opE 
+if %opcion% == f  goto end 
 
 ::############################################################################
 
 :opA
 
 echo opcion A
+
+more /E INFORMACION.txt
 
 goto MENU
 
@@ -53,6 +55,8 @@ goto MENU
 
 echo opcion B
 
+type INFORMACION.txt
+
 goto MENU
 
 ::############################################################################
@@ -60,6 +64,11 @@ goto MENU
 :opC
 
 echo opcion C
+
+echo Que quieres Imprimir?
+set /p texto=
+
+echo %texto%
 
 goto MENU
 
@@ -69,6 +78,8 @@ goto MENU
 
 echo opcion D
 
+vol >> VARIOS.txt
+
 goto MENU
 
 ::############################################################################
@@ -77,14 +88,16 @@ goto MENU
 
 echo opcion E
 
-goto MENU
-
-::############################################################################
-
-:opF
-
-echo opcion F
+cd  >> VARIOS.txt
 
 goto MENU
 
 ::############################################################################
+
+
+:MENU
+
+pause
+cls
+
+goto MENU1
