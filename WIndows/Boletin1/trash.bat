@@ -14,5 +14,5 @@ rem O script tamén debe asegurarse de que o directorio trash existe no director
 rem Unha vez realizadas as comprobacións moverá o ficheiro pasado por parámetro ao directorio trash.
 
 
-
+if exist 
 
