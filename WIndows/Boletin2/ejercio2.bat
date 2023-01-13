@@ -6,7 +6,9 @@ echo ---------------- sin for -------------------
 
 set pathActual=%cd%
 
-cd /D c:\
+set /p unidad="que unidad quieres analizar? con ':'"
+
+cd /D %unidad%
 
 dir /B /S *.bmp
 
