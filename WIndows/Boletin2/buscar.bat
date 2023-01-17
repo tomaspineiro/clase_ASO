@@ -9,14 +9,6 @@ if  "%1" EQU "" (
 
 )
 
-
 dir /B /S %1
-
-::for /R %%a in (.\%1) do (
-::  echo for 
-::  type %%a
-::) 
-
-::echo %1
 
 echo fin
