@@ -1,0 +1,19 @@
+#curso; id;   usuario; nombre
+1ESO; 16163; brunobp; Bermúdez Pérez, Bruno
+3ESO; 15141; franciscobs; Bermúdez Sebas, Francisco
+3ESO; 03223; manuelcx; Cortegoso Xátiva, Manuel
+1ESO; 05603; anadrm; Del Rio Murcia, Ana
+1ESO; 13414; dariofg; Fandiño Guitian, Darío
+2ESO; 13415; victorfa; Ferradás Antúnez, Víctor  
+2ESO; 12316; mariagf; García Franco, María
+2ESO; 13653; silvestrege; Gracia Epifanio, Silvestre
+3ESO; 16123; chichogs; Gil Solozabal, Chicho 
+3ESO; 11244; ataulfols; Lorenzo Sánchez, Ataulfo 
+2ESO; 16788; kikems; Malvido Sebastián, Kike  
+1ESO; 16999; uxiaop; Otero Pereiro, Uxía 
+1ESO; 33119; silvapc; Pajares Chincho, Silva
+2ESO; 22146; soniapb; Pajares Becerra, Sonia 
+
+
+
+
