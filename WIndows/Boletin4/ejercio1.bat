@@ -18,8 +18,10 @@ rem -mustchpwd {yes|no} O usuario debe cambiar o contrasinal no proximo inicio d
 
 for /F "eol=#  tokens=1-6 delims=;, "  %%i in (.\Alumnos.txt) do (
 
-    rem echo curso: %%i, id: %%j, usuario: %%k, nombre: %%l, %%m , %%n, correo: %%n.%%l.%%n@rodeira
+    rem echo curso: %%i, id: %%j, usuario: %%k, nombre: %%l, %%m , %%n, correo: %%n.%%l@rodeira
 
-    dsadd user "OU=%%i, OU=alumno, DC=tomas,DC=aso" -samid %%k -upn "%%n.%%l.%%m@tomas.aso" -fn %%m -ln %%l -pwd abc123. -mustchpwd yes
+    dsadd user "CN=%%n %%l, OU=%%i, OU=alumno, DC=tomas, DC=aso" -samid %%k -upn "%%n.%%l@tomas.aso" -fn %%m -ln %%l -pwd abc123. -mustchpwd yes
 
 )
+
+ rem dsadd user "CN=pi co, OU=1ESO, OU=alumno,  DC=tomas, DC=aso" -samid topi -upn "pi.co@tomas.aso" -fn pi -ln co -pwd abc123. -mustchpwd yes
